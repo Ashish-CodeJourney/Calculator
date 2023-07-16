@@ -16,10 +16,10 @@ This is a simple calculator web application created using HTML, CSS, and JavaScr
 - Error handling for division by zero and other invalid inputs
 
 ## Preview
-![Calculator Preview](calculator-preview.png)
+![Calculator Preview](/img/calculator-preview.png)
 
 ## Live Demo
-[Click here for the live demo](https://your-calculator-url.com)
+[Click here for the live demo]([https://your-calculator-url.com](https://calc-by-ashish-codejourney.netlify.app/))
 
 ## Getting Started
 To run the calculator locally, follow these steps:
