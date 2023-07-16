@@ -43,7 +43,7 @@ To run the calculator locally, follow these steps:
 
 ## Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/ashish-codejourney/)
-- [GitHub](\https://github.com/Ashish-CodeJourney)
+- [GitHub](https://github.com/Ashish-CodeJourney)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
