@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator - By Ashish-CodeJourney</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(45deg, #0a0a0a, #527a7a);
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .calculator {
+      border: 1px solid #717377;
+      padding: 20px;
+      border-radius: 16px;
+      background: transparent;
+      box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+      max-width: 320px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .calculator-title {
+      font-size: 24px;
+      color: #fb7c14;
+      /* Update the color for the title */
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family: 'Arial', sans-serif;
+      /* Update the font for the title */
+    }
+
+    .calculator-links {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .calculator-links a {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .calculator-links img {
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+    }
+
+    .calculator-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    input {
+      grid-column: 1 / -1;
+      border: none;
+      padding: 16px;
+      background: transparent;
+      font-size: 32px;
+      text-align: right;
+      color: #ffffff;
+      box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+      width: 100%;
+    }
+
+    input::placeholder {
+      color: #ffffff;
+    }
+
+    input[type="text"]::-webkit-outer-spin-button,
+    input[type="text"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="text"] {
+      -moz-appearance: textfield;
+    }
+
+    button {
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      height: 60px;
+      font-size: 24px;
+      background-color: #4a4a4a;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .equalBtn {
+      background-color: #fb7c14;
+    }
+
+    .operator {
+      background-color: #6dee0a;
+    }
+
+    .button-zero {
+      grid-column: 1 / 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="calculator-title">Calculator - By Ashish-CodeJourney</h1>
+    <div class="calculator">
+      <div class="calculator-grid">
+        <input type="text" id="inputBox" placeholder="0"
+          onkeydown="return event.keyCode === 8 || event.keyCode === 46 || (event.keyCode >= 48 && event.keyCode <= 57)" />
+        <button class="button operator">AC</button>
+        <button class="button operator">DEL</button>
+        <button class="button operator">%</button>
+        <button class="button operator">/</button>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button operator">*</button>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button operator">-</button>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button operator">+</button>
+        <button class="button button-zero">00</button>
+        <button class="button">0</button>
+        <button class="button">.</button>
+        <button class="button equalBtn">=</button>
+      </div>
+    </div>
+    <div class="calculator-links">
+      <a href="https://www.linkedin.com/in/ashish-codejourney/" target="_blank">
+        <img src="/img/linkedin.png" alt="LinkedIn Logo" />
+        LinkedIn
+      </a>
+      <a href="https://github.com/Ashish-CodeJourney" target="_blank">
+        <img src="/img/github.png" alt="GitHub Logo" />
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
