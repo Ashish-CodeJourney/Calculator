@@ -15,7 +15,7 @@ the other using HTML, CSS, and JavaScript.
 - Error handling for division by zero and other invalid inputs
 
 ## Live Demo
-[Click here for the live demo](c-by-ashish-codejourney.netlify.app)
+[Click here for the live demo](calc-by-ashish-codejourney.netlify.app)
 
 
 ## Author
